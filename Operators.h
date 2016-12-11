@@ -48,6 +48,6 @@ vector vectorSub(vector vec1, vector vec2);
 vector vectorScale(float c, vector *v);
 vector vectorAdd(vector *vec1, vector *vec2);
 
-bool intersectRaySphere(ray *r, sphere *s,  float *t);
+bool intersectRaySphere(ray *r, sphere *s, float *t);
 
 #endif //RAY_TRACER_OPERATORS_H

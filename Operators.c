@@ -84,19 +84,20 @@ bool intersectRaySphere(ray *r, sphere *s,  float *t) {
     float discrim = (B * B) - (4 * A * C);
 
     if(discrim < 0) return false;
+    else return true;
 
-    float discrim_root = sqrtf(discrim);
+   /* float discrim_root = sqrtf(discrim);
     float t0 = -B + discrim_root / (2);
-    float t1 = -B - discrim_root / (2);
+    float t1 = -B - discrim_root / (2);*/
 
     //Get Closest solution
-    if(t0 > t1) t0 = t1;
+    //if(t0 > t1) t0 = t1;
 
-    /* Verify t0 larger than 0 and less than the original t */
+  /*  *//* Verify t0 larger than 0 and less than the original t *//*
     if((t0 > 0.001f) && (t0 < *t)){
         *t = t0;
         return true;
-    }else return false;
+    }else return false;*/
 }
 
 float vectorDot(vector vec1, vector vec2) {
